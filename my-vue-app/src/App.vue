@@ -1,6 +1,6 @@
 <script>
-// 1 - Importo il componente
 import AppTitle from './components/AppTitle.vue';
+import AppHero from './components/AppHero.vue';
 
 export default {
   name: 'App',
@@ -8,9 +8,9 @@ export default {
     return {
     };
   },
-  // 2 - Lo registro edntro components (proprietà sorella di data())
   components: {
-    AppTitle
+    AppTitle,
+    AppHero
   }
 }
 </script>
@@ -25,6 +25,7 @@ export default {
     </a>
   </div>
   <AppTitle />
+  <AppHero />
 </template>
 
 <style scoped>
