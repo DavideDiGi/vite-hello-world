@@ -1,5 +1,18 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
+<script>
+// 1 - Importo il componente
+import AppTitle from './components/AppTitle.vue';
+
+export default {
+  name: 'App',
+  data() {
+    return {
+    };
+  },
+  // 2 - Lo registro edntro components (proprietà sorella di data())
+  components: {
+    AppTitle
+  }
+}
 </script>
 
 <template>
@@ -11,7 +24,7 @@ import HelloWorld from './components/HelloWorld.vue'
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
   </div>
-  <HelloWorld msg="Vite + Vue" />
+  <AppTitle />
 </template>
 
 <style scoped>
@@ -20,9 +33,11 @@ import HelloWorld from './components/HelloWorld.vue'
   padding: 1.5em;
   will-change: filter;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.vue:hover {
   filter: drop-shadow(0 0 2em #42b883aa);
 }

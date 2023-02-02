@@ -10,11 +10,11 @@ export default {
 </script>
 
 <template>
-    <h1>{{ message }}</h1>
+    <h2>{{ message }}</h2>
 </template>
 
 <style scoped>
 .read-the-docs {
     color: #888;
 }
-</style>
+</style> -->
